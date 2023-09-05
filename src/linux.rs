@@ -5,28 +5,26 @@ use wl_clipboard_rs::paste::{get_contents, ClipboardType, Error, MimeType, Seat}
 use wl_clipboard_rs::utils::is_primary_selection_supported;
 use x11_clipboard::Clipboard;
 
-// TODO
 pub fn get_text() -> String {
-	// match var("XDG_SESSION_TYPE") {
-	// 	Ok(session_type) => match session_type.as_str() {
-	// 		"x11" => match get_text_on_x11() {
-	// 			Ok(text) => return text,
-	// 			Err(err) => return String::new(),
-	// 		},
-	// 		"wayland" => match get_text_on_wayland() {
-	// 			Ok(text) => return text,
-	// 			Err(err) => return String::new(),
-	// 		},
-	// 		_ => {
-	// 			eprintln!("Unknown Session Type: {session_type}");
-	// 			return String::new();
-	// 		}
-	// 	},
-	// 	Err(_err) => {
-	// 		return String::new();
-	// 	}
-	// }
-	String::new()
+	match var("XDG_SESSION_TYPE") {
+		Ok(session_type) => match session_type.as_str() {
+			"x11" => match get_text_on_x11() {
+				Ok(text) => return text,
+				Err(err) => return String::new(),
+			},
+			"wayland" => match get_text_on_wayland() {
+				Ok(text) => return text,
+				Err(err) => return String::new(),
+			},
+			_ => {
+				eprintln!("Unknown Session Type: {session_type}");
+				return String::new();
+			}
+		},
+		Err(_err) => {
+			return String::new();
+		}
+	}
 }
 
 fn get_text_on_x11() -> Result<String, String> {
