@@ -1,0 +1,18 @@
+{
+	"name": "@selection-rs/selection-win32-x64-msvc",
+	"version": "0.0.0",
+	"license": "MIT",
+	"main": "selection.win32-x64-msvc.node",
+	"files": [
+		"selection.win32-x64-msvc.node"
+	],
+	"engines": {
+		"node": ">= 10"
+	},
+	"cpu": [
+		"x64"
+	],
+	"os": [
+		"win32"
+	]
+}

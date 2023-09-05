@@ -1,0 +1,35 @@
+{
+	"name": "@selection-rs/selection",
+	"version": "0.0.0",
+	"packageManager": "yarn@3.6.3",
+	"license": "MIT",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"engines": {
+		"node": ">= 10"
+	},
+	"scripts": {
+		"artifacts": "napi artifacts",
+		"build": "napi build --platform --release",
+		"build:debug": "napi build --platform",
+		"lint": "eslint . && prettier . --check",
+		"lint:fix": "eslint . --fix && prettier . --write",
+		"prepublishOnly": "napi prepublish -t npm",
+		"test": "vitest",
+		"universal": "napi universal",
+		"version": "napi version"
+	},
+	"devDependencies": {
+		"@napi-rs/cli": "^2.16.3",
+		"@so1ve/eslint-config": "^0.120.3",
+		"@so1ve/prettier-config": "^0.120.3",
+		"eslint": "^8.48.0",
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2",
+		"vitest": "^0.34.3"
+	},
+	"napi": {
+		"name": "selection",
+		"triples": {}
+	}
+}
