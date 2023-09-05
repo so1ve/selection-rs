@@ -1,18 +1,18 @@
 {
-	"name": "@selection-rs/selection-darwin-x64",
-	"version": "0.0.0",
-	"license": "MIT",
-	"main": "selection.darwin-x64.node",
-	"files": [
-		"selection.darwin-x64.node"
-	],
-	"engines": {
-		"node": ">= 10"
-	},
-	"cpu": [
-		"x64"
-	],
-	"os": [
-		"darwin"
-	]
+  "name": "@selection-rs/selection-darwin-x64",
+  "version": "0.0.2",
+  "license": "MIT",
+  "main": "selection.darwin-x64.node",
+  "files": [
+    "selection.darwin-x64.node"
+  ],
+  "engines": {
+    "node": ">= 10"
+  },
+  "cpu": [
+    "x64"
+  ],
+  "os": [
+    "darwin"
+  ]
 }

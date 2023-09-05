@@ -1,6 +1,6 @@
 {
 	"name": "@selection-rs/selection",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"packageManager": "yarn@3.6.3",
 	"license": "MIT",
 	"main": "index.js",
@@ -14,7 +14,7 @@
 		"build:debug": "napi build --platform",
 		"lint": "eslint . && prettier . --check",
 		"lint:fix": "eslint . --fix && prettier . --write",
-		"release": "bumpp package.json packages/*/package.json",
+		"release": "bumpp package.json npm/*/package.json",
 		"test": "vitest",
 		"universal": "napi universal",
 		"version": "napi version"
