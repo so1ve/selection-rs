@@ -1,6 +1,6 @@
 {
 	"name": "@selection-rs/selection",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"packageManager": "yarn@3.6.3",
 	"license": "MIT",
 	"main": "index.js",
