@@ -1,6 +1,6 @@
 {
   "name": "@selection-rs/selection-win32-x64-msvc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "selection.win32-x64-msvc.node",
   "files": [
