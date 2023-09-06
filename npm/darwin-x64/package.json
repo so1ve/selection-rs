@@ -1,20 +1,20 @@
 {
-	"name": "@selection-rs/selection-darwin-x64",
-	"version": "0.0.4",
-	"description": "Selection crate binding for Node.js",
-	"repository": "https://github.com/so1ve/selection-rs",
-	"license": "MIT",
-	"main": "selection.darwin-x64.node",
-	"files": [
-		"selection.darwin-x64.node"
-	],
-	"engines": {
-		"node": ">= 10"
-	},
-	"cpu": [
-		"x64"
-	],
-	"os": [
-		"darwin"
-	]
+  "name": "@selection-rs/selection-darwin-x64",
+  "version": "0.0.5",
+  "description": "Selection crate binding for Node.js",
+  "repository": "https://github.com/so1ve/selection-rs",
+  "license": "MIT",
+  "main": "selection.darwin-x64.node",
+  "files": [
+    "selection.darwin-x64.node"
+  ],
+  "engines": {
+    "node": ">= 10"
+  },
+  "cpu": [
+    "x64"
+  ],
+  "os": [
+    "darwin"
+  ]
 }
