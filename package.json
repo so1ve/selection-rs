@@ -19,7 +19,7 @@
 		"build:debug": "napi build --platform",
 		"lint": "eslint . && prettier . --check",
 		"lint:fix": "eslint . --fix && prettier . --write",
-		"prepublishOnly": "napi prepublish -t npm",
+		"prepublishOnly": "napi prepublish -t npm && prettier . --write",
 		"release": "bumpp package.json npm/*/package.json",
 		"test": "vitest",
 		"universal": "napi universal",
