@@ -1,6 +1,6 @@
 {
   "name": "@selection-rs/selection-darwin-x64",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Selection crate binding for Node.js",
   "repository": "https://github.com/so1ve/selection-rs",
   "license": "MIT",
