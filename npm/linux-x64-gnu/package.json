@@ -1,23 +1,23 @@
 {
-  "name": "@selection-rs/selection-linux-x64-gnu",
-  "version": "0.0.7",
-  "description": "Selection crate binding for Node.js",
-  "repository": "https://github.com/so1ve/selection-rs",
-  "license": "MIT",
-  "main": "selection.linux-x64-gnu.node",
-  "files": [
-    "selection.linux-x64-gnu.node"
-  ],
-  "engines": {
-    "node": ">= 10"
-  },
-  "cpu": [
-    "x64"
-  ],
-  "libc": [
-    "glibc"
-  ],
-  "os": [
-    "linux"
-  ]
+	"name": "@selection-rs/selection-linux-x64-gnu",
+	"version": "0.0.7",
+	"description": "Selection crate binding for Node.js",
+	"repository": "https://github.com/so1ve/selection-rs",
+	"license": "MIT",
+	"main": "selection.linux-x64-gnu.node",
+	"files": [
+		"selection.linux-x64-gnu.node"
+	],
+	"engines": {
+		"node": ">= 10"
+	},
+	"cpu": [
+		"x64"
+	],
+	"libc": [
+		"glibc"
+	],
+	"os": [
+		"linux"
+	]
 }

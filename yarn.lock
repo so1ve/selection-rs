@@ -468,6 +468,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@selection-rs/selection-darwin-x64@workspace:npm/darwin-x64":
+  version: 0.0.0-use.local
+  resolution: "@selection-rs/selection-darwin-x64@workspace:npm/darwin-x64"
+  languageName: unknown
+  linkType: soft
+
+"@selection-rs/selection-linux-x64-gnu@workspace:npm/linux-x64-gnu":
+  version: 0.0.0-use.local
+  resolution: "@selection-rs/selection-linux-x64-gnu@workspace:npm/linux-x64-gnu"
+  languageName: unknown
+  linkType: soft
+
+"@selection-rs/selection-win32-x64-msvc@workspace:npm/win32-x64-msvc":
+  version: 0.0.0-use.local
+  resolution: "@selection-rs/selection-win32-x64-msvc@workspace:npm/win32-x64-msvc"
+  languageName: unknown
+  linkType: soft
+
 "@selection-rs/selection@workspace:.":
   version: 0.0.0-use.local
   resolution: "@selection-rs/selection@workspace:."
