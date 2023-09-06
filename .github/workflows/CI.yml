@@ -173,7 +173,15 @@ jobs:
           if git log -1 --pretty=%B | grep "^chore: release v[0-9]\+\.[0-9]\+\.[0-9]\+";
           then
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            yarn workspaces foreach npm publish --access public
+            npm publish --access public
+            cd npm
+            cd darwin-x64
+            npm publish --access public
+            cd ..
+            cd linux-x64-gnu
+            npm publish --access public
+            cd ..
+            cd windows-x64-msvc
             npm publish --access public
           else
             echo "Not a release, skipping publish"
