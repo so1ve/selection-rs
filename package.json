@@ -2,6 +2,8 @@
 	"name": "@selection-rs/selection",
 	"version": "0.0.4",
 	"packageManager": "yarn@3.6.3",
+	"description": "Selection crate binding for Node.js",
+	"repository": "https://github.com/so1ve/selection-rs",
 	"license": "MIT",
 	"main": "index.js",
 	"types": "index.d.ts",
@@ -14,6 +16,7 @@
 		"build:debug": "napi build --platform",
 		"lint": "eslint . && prettier . --check",
 		"lint:fix": "eslint . --fix && prettier . --write",
+		"prepublishOnly": "napi prepublish -t npm",
 		"release": "bumpp package.json npm/*/package.json",
 		"test": "vitest",
 		"universal": "napi universal",
@@ -28,6 +31,11 @@
 		"prettier": "^3.0.3",
 		"typescript": "^5.2.2",
 		"vitest": "^0.34.3"
+	},
+	"optionalDependencies": {
+		"@selection-rs/selection-darwin-x64": "0.0.4",
+		"@selection-rs/selection-linux-x64-gnu": "0.0.4",
+		"@selection-rs/selection-win32-x64-msvc": "0.0.4"
 	},
 	"napi": {
 		"name": "selection",

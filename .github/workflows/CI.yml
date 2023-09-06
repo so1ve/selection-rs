@@ -6,7 +6,7 @@ env:
 permissions:
   contents: write
   id-token: write
-on:
+"on":
   push:
     branches:
       - main
@@ -143,44 +143,11 @@ jobs:
         shell: bash
       - name: Test bindings
         run: yarn test
-  # test-linux-x64-gnu-binding:
-  #   name: Test bindings on Linux-x64-gnu - node@${{ matrix.node }}
-  #   needs:
-  #     - build
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       node:
-  #         - "14"
-  #         - "16"
-  #         - "18"
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - name: Setup node
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version: ${{ matrix.node }}
-  #         check-latest: true
-  #         cache: yarn
-  #     - name: Install dependencies
-  #       run: yarn install
-  #     - name: Download artifacts
-  #       uses: actions/download-artifact@v3
-  #       with:
-  #         name: bindings-x86_64-unknown-linux-gnu
-  #         path: .
-  #     - name: List packages
-  #       run: ls -R .
-  #       shell: bash
-  #     - name: Test bindings
-  #       run: docker run --rm -v $(pwd):/build -w /build node:${{ matrix.node }}-slim yarn test
   publish:
     name: Publish
     runs-on: ubuntu-latest
     needs:
       - test-macOS-windows-binding
-      # - test-linux-x64-gnu-binding
     steps:
       - uses: actions/checkout@v3
       - name: Setup node
@@ -202,6 +169,7 @@ jobs:
         shell: bash
       - name: Publish
         run: |
+          npm config set provenance true
           if git log -1 --pretty=%B | grep "^chore: release v[0-9]\+\.[0-9]\+\.[0-9]\+";
           then
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
