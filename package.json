@@ -7,6 +7,9 @@
 	"license": "MIT",
 	"main": "index.js",
 	"types": "index.d.ts",
+	"files": [
+		"index.d.ts"
+	],
 	"engines": {
 		"node": ">= 10"
 	},
@@ -32,13 +35,11 @@
 		"typescript": "^5.2.2",
 		"vitest": "^0.34.3"
 	},
-	"optionalDependencies": {
-		"@selection-rs/selection-darwin-x64": "0.0.4",
-		"@selection-rs/selection-linux-x64-gnu": "0.0.4",
-		"@selection-rs/selection-win32-x64-msvc": "0.0.4"
-	},
 	"napi": {
 		"name": "selection",
 		"triples": {}
-	}
+	},
+	"workspaces": [
+		"packages/*"
+	]
 }
