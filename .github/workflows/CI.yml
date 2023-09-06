@@ -174,15 +174,6 @@ jobs:
           then
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
             npm publish --access public
-            cd npm
-            cd darwin-x64
-            npm publish --access public
-            cd ..
-            cd linux-x64-gnu
-            npm publish --access public
-            cd ..
-            cd windows-x64-msvc
-            npm publish --access public
           else
             echo "Not a release, skipping publish"
           fi
