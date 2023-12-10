@@ -1569,18 +1569,18 @@ __metadata:
   linkType: hard
 
 "bumpp@npm:^9.2.0":
-  version: 9.2.0
-  resolution: "bumpp@npm:9.2.0"
+  version: 9.2.1
+  resolution: "bumpp@npm:9.2.1"
   dependencies:
     "@jsdevtools/ez-spawn": ^3.0.4
-    c12: ^1.4.2
+    c12: ^1.5.1
     cac: ^6.7.14
-    fast-glob: ^3.3.1
+    fast-glob: ^3.3.2
     prompts: ^2.4.2
     semver: ^7.5.4
   bin:
     bumpp: bin/bumpp.js
-  checksum: e1d4aed43e41d00a9a7bb99be0b2c4e38d060b074c7e717017065f4ccb1b94881e3dc259d2f150270238326ccd73fc457b86367943de97b86d955be78b45e661
+  checksum: 0be5bf3f25e4870176ef4c91bd70b3f2f291cce46b14e43c7986da3f834c2415ea63ff3448e6ad03e68b6dc05a3f788562a24fd75018769a702dd84634f26577
   languageName: node
   linkType: hard
 
@@ -1593,7 +1593,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"c12@npm:^1.4.2":
+"c12@npm:^1.5.1":
   version: 1.5.1
   resolution: "c12@npm:1.5.1"
   dependencies:
@@ -3082,7 +3082,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.9, fast-glob@npm:^3.3.0, fast-glob@npm:^3.3.1":
+"fast-glob@npm:^3.2.9, fast-glob@npm:^3.3.0, fast-glob@npm:^3.3.1, fast-glob@npm:^3.3.2":
   version: 3.3.2
   resolution: "fast-glob@npm:3.3.2"
   dependencies:
