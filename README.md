@@ -13,9 +13,9 @@ pnpm add @selection-rs/selection
 ## Usage
 
 ```ts
-import { getText } from "@selection-rs/selection";
+import { getText } from '@selection-rs/selection'
 
-console.log(getText());
+console.log(getText())
 ```
 
 ## Credits
