@@ -24,6 +24,23 @@ jobs:
           node-version: 20.x
           cache: yarn
 
+      - name: Install
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable
+          targets: x86_64-unknown-linux-gnu
+
+      - name: Cache cargo
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            .cargo-cache
+            target/
+          key: autofix.ci-cargo
+
       - name: Setup
         run: npm i -g @antfu/ni
 
@@ -32,6 +49,9 @@ jobs:
 
       - name: Lint and fix
         run: nr lint:fix
+
+      - name: Format rust code
+        run: cargo fmt
 
       - uses: autofix-ci/action@bee19d72e71787c12ca0f29de72f2833e437e4c9
         with:
