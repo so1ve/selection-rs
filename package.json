@@ -11,7 +11,7 @@
 		"index.d.ts"
 	],
 	"engines": {
-		"node": ">= 10"
+		"node": ">= 18"
 	},
 	"scripts": {
 		"artifacts": "napi artifacts",
