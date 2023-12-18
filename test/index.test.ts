@@ -1,7 +1,7 @@
-import { expect, it } from 'vitest'
+import { expect, it } from "vitest";
 
-import { getText } from '..'
+import { getText } from "..";
 
-it('sum from native', () => {
-	expect(getText()).toMatchInlineSnapshot('""')
-})
+it("sum from native", () => {
+	expect(getText()).toMatchInlineSnapshot('""');
+});
