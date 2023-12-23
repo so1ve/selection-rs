@@ -116,8 +116,6 @@ jobs:
         settings:
           - host: macos-latest
             target: x86_64-apple-darwin
-          - host: windows-latest
-            target: x86_64-pc-windows-msvc
         node:
           - "18"
           - "20"
