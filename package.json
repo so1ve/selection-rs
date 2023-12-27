@@ -1,6 +1,6 @@
 {
 	"name": "@selection-rs/selection",
-	"version": "0.0.11",
+	"version": "0.1.0",
 	"packageManager": "yarn@3.7.0",
 	"description": "Selection crate binding for Node.js",
 	"repository": "https://github.com/so1ve/selection-rs",
