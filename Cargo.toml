@@ -9,24 +9,8 @@ crate-type = ["cdylib"]
 [dependencies]
 # Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
 napi = { version = "2.14.1", default-features = false, features = ["napi4"] }
-napi-derive = "2.14.5"
-
-[target.'cfg(windows)'.dependencies]
-windows = { version = "0.44.0", features = [
-	"Win32_UI_WindowsAndMessaging",
-	"Win32_Foundation",
-	"Win32_System_Threading",
-	"Win32_UI_Input_KeyboardAndMouse",
-	"Win32_System_DataExchange",
-	"Win32_UI_Accessibility",
-	"Win32_System_Com"
-] }
-enigo = { git = "https://github.com/enigo-rs/enigo", rev = "c53be78" }
-arboard = "3.3.0"
-
-[target.'cfg(target_os = "linux")'.dependencies]
-x11-clipboard = "0.7.1"
-wl-clipboard-rs = "0.7.0"
+napi-derive = "2.14.2"
+selection = "1.1.1"
 
 [build-dependencies]
 napi-build = "2.1.0"
