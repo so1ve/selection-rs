@@ -13,7 +13,7 @@ napi-derive = "2.15.2"
 selection = "1.1.1"
 
 [build-dependencies]
-napi-build = "2.1.0"
+napi-build = "2.1.1"
 
 [profile.release]
 lto = true
