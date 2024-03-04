@@ -1564,19 +1564,20 @@ __metadata:
   linkType: hard
 
 "bumpp@npm:^9.2.0":
-  version: 9.3.1
-  resolution: "bumpp@npm:9.3.1"
+  version: 9.4.0
+  resolution: "bumpp@npm:9.4.0"
   dependencies:
     "@jsdevtools/ez-spawn": ^3.0.4
     c12: ^1.9.0
     cac: ^6.7.14
+    escalade: ^3.1.2
     fast-glob: ^3.3.2
     js-yaml: ^4.1.0
     prompts: ^2.4.2
     semver: ^7.6.0
   bin:
     bumpp: bin/bumpp.js
-  checksum: e7ddafb2c03559345cf16fc676e7808397cfc2f7d4c57717bbfd9d47cd57b30229968f3ba7263273f8a4e440e150c774fa335122c92e829be1bc64c085e785ff
+  checksum: 8b4c8dbb7ef9abcde805a802fd8b32d8eaa3a5cc6f5641fe7c1a870a57d9f2533a9a68ddf70e898000b9c8ef1608be6cc51d5d62c223cfa1a0fb9c9f70c5e180
   languageName: node
   linkType: hard
 
@@ -2380,7 +2381,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"escalade@npm:^3.1.1":
+"escalade@npm:^3.1.1, escalade@npm:^3.1.2":
   version: 3.1.2
   resolution: "escalade@npm:3.1.2"
   checksum: 1ec0977aa2772075493002bdbd549d595ff6e9393b1cb0d7d6fcaf78c750da0c158f180938365486f75cb69fba20294351caddfce1b46552a7b6c3cde52eaa02
