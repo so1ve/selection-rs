@@ -618,7 +618,7 @@ __metadata:
   dependencies:
     "@napi-rs/cli": ^2.16.3
     "@so1ve/eslint-config": ^0.120.3
-    "@so1ve/prettier-config": ^0.120.3
+    "@so1ve/prettier-config": ^0.123.0
     bumpp: ^9.2.0
     eslint: ^8.48.0
     prettier: ^3.0.3
@@ -743,7 +743,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@so1ve/prettier-config@npm:0.120.4, @so1ve/prettier-config@npm:^0.120.3":
+"@so1ve/prettier-config@npm:0.120.4":
   version: 0.120.4
   resolution: "@so1ve/prettier-config@npm:0.120.4"
   dependencies:
@@ -757,12 +757,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@so1ve/prettier-config@npm:^0.123.0":
+  version: 0.123.0
+  resolution: "@so1ve/prettier-config@npm:0.123.0"
+  dependencies:
+    "@so1ve/prettier-plugin-toml": 0.123.0
+    prettier-plugin-astro: ^0.12.0
+    prettier-plugin-curly-and-jsdoc: 0.123.0
+    prettier-plugin-pkgsort: ^0.2.0
+  peerDependencies:
+    prettier: ^3.0.0
+  checksum: 80065f86865c704c99fdd3bcb573fe81aeef739d9034d340528d4292b8e969ede5f86ed1ef582696905469d9c08202243f38b24e3af68901eaa5e5454b185352
+  languageName: node
+  linkType: hard
+
 "@so1ve/prettier-plugin-toml@npm:0.120.4":
   version: 0.120.4
   resolution: "@so1ve/prettier-plugin-toml@npm:0.120.4"
   peerDependencies:
     prettier: ^3.0.0
   checksum: 4311e73a959dd0bc3d850ab46def3269abd09c33767f14a0117e3fc85e5bf4d4351bd83ade29c1dfea7339dbd5ffd4afd6c2d44f36fdc94116489569f6444910
+  languageName: node
+  linkType: hard
+
+"@so1ve/prettier-plugin-toml@npm:0.123.0":
+  version: 0.123.0
+  resolution: "@so1ve/prettier-plugin-toml@npm:0.123.0"
+  peerDependencies:
+    prettier: ^3.0.0
+  checksum: 0f9f0a6cbac088c2095aff0cd65af64ef0387a5014c58c8511e76fc5793afbf5e66ac53da7eadf8e261d4a11cf7125f88389096a056ebbc166e626c6a47047f1
   languageName: node
   linkType: hard
 
@@ -5663,6 +5686,15 @@ __metadata:
   peerDependencies:
     prettier: ^3.0.0
   checksum: 5f7c5b20ac6d7389f89a7c93b0417c4e4ff99c49a9a43b53080d9f25e82ecd391c1fa4fc807f10fa8f7be1c1ee94abefecff7a6bdc908cb5549b2f84f72b605c
+  languageName: node
+  linkType: hard
+
+"prettier-plugin-curly-and-jsdoc@npm:0.123.0":
+  version: 0.123.0
+  resolution: "prettier-plugin-curly-and-jsdoc@npm:0.123.0"
+  peerDependencies:
+    prettier: ^3.0.0
+  checksum: 40b4a8a6c7783e8ae80d1f27b52c3c20959b8a54608a973fc62e30f3da34dc3323e567fba2315f51248fb89db3683ad7a1d2d82af56fa82d55e296cb5fdd95c5
   languageName: node
   linkType: hard
 
